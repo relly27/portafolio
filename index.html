@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="es" >
+<head>
+  <meta charset="UTF-8">
+  <title>Portafolio Relly Garcia</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="autor" content="Relly Garcia">
+<meta name="description" content="Portadolio desarrollo">
+<meta name="keywords" content="pug, portfolio, project">
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.2/css/bootstrap.css'>
+<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.0.13/css/all.css'><link rel="stylesheet" href="./style.css">
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top" id="navbar"><a class="navbar-brand name" href="#welcome-section"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#miNavegacion" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+  <div class="collapse navbar-collapse justify-content-end" id="miNavegacion">
+    <ul class="navbar-nav">
+      <li class="nav-item mr-3"><a class="nav-link" href="#welcome-section"><i class="fa fa-home" aria-hidden="true"><span class="d-md-none ml-2">welcome-section</span></i></a></li>
+      <li class="nav-item mr-3"><a class="nav-link" href="#projects"><i class="fa fa-folder" aria-hidden="true"><span class="d-md-none ml-2">Portfolio</span></i></a></li>
+      <li class="nav-item mr-3"><a class="nav-link" href="#sobreMi"><i class="fa fa-user" aria-hidden="true"><span class="d-md-none ml-2">Sobre Mi</span></i></a></li>
+      <li class="nav-item mr-3"><a class="nav-link" href="#contacto"><i class="fa fa-envelope" aria-hidden="true"><span class="d-md-none ml-2">Contacto</span></i></a></li>
+      <li class="nav-item mr-3"><a class="text-muted" href="https://www.dropbox.com/s/tx3xce0l3ep6ay2/curriculum-1.pdf?dl=0" target="_blank">
+          <button class="btn btn-outline-secondary" type="button"><i class="fa fa-download mr-2" aria-hidden="true"></i>descargar CV</button></a></li>
+    </ul>
+  </div>
+</nav>
+<header class="hero-image" id="welcome-section">
+  <div class="container-fluid h-100">
+    <div class="row h-100">
+      <div class="col-md-12 my-auto mx-auto text-center">
+        <h1 class="text-white display-3"><em><strong>Desarrollo de software y Desarrollo web</strong></em></h1>
+        <p class="text-white lead"><strong>Calidad, responsabilidad y siempre al dia en las ultimas tecnologias en desarrollo</strong></p><a class="btn btn-secondary btn-lg" href="#projects">Ver Portafolio<i class="fa fa-folder ml-2" aria-hidden="true"></i></a>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+
+
+<section id="projects">
+  <div class="container py-5">
+    <h2 class="my-5 text-dark" id="masonry" data-container="body" data-toggle="popover" data-placement="top" data-content="Masonry Cards" style="width: 250px;">Portafolio<i class="fa fa-folder ml-2"></i></h2>
+    <div class="card-columns">
+      <div class="card efecto my-3"><img class="card-img-top" src="https://www.infobae.com/new-resizer/3kUE6Rn0sjsbEwYzvNVM_0jMWwU=/768x432/filters:format(webp):quality(85)/arc-anglerfish-arc2-prod-infobae.s3.amazonaws.com/public/K7ARUY7SGZGKNIF4TFTDP4PZW4" alt="Andrés Caicedo"/>
+        <div class="card-body project-tile">
+          <h5 class="project-tile">Build a Tribute Page<i class="ml-3 fab fa-free-code-camp"></i></h5><a class="btn btn-outline-secondary btn-lg btn-block" href="https://codepen.io/CarlosAndresAlzate/full/VbxKKb/" target="_blank" id="profile-link">Vamos</a>
+        </div>
+      </div>
+      <div class="card efecto my-3"><img class="card-img-top" src="https://shots.codepen.io/username/pen/JjzEpvV-800.jpg?version=1705765260" alt="iPod Classic"/>
+        <div class="card-body project-tile">
+          <h5 class="project-tile">iPod Classic - CSS Illustration<i class="ml-3 fab fa-apple"></i></h5><a class="btn btn-outline-secondary btn-lg btn-block" href="https://codepen.io/CarlosAndresAlzate/pen/JjzEpvV" target="_blank" id="profile-link">Vamos</a>
+        </div>
+      </div>
+      <div class="card efecto my-3"><img class="card-img-top" src="https://images.unsplash.com/photo-1489596980528-fcb8113ec104?ixlib=rb-0.3.5&amp;q=85&amp;fm=jpg&amp;crop=entropy&amp;cs=srgb&amp;ixid=eyJhcHBfaWQiOjE0NTg5fQ%3D%3D%0A&amp;s=58d3353e7e280cd9eb9dbd5da377b60b" alt="ejemplo"/>
+        <div class="card-body project-tile">
+          <h5 class="project-tile">Proximamente<i class="ml-3 fas fa-times-circle"></i></h5><a class="disabled btn btn-outline-secondary btn-lg btn-block" href="#portafolio" target="_blank" id="profile-link">Proximamente</a>
+        </div>
+      </div>
+      <div class="card efecto my-3"><img class="card-img-top" src="https://images.unsplash.com/photo-1463797221720-6b07e6426c24?ixlib=rb-0.3.5&amp;q=85&amp;fm=jpg&amp;crop=entropy&amp;cs=srgb&amp;ixid=eyJhcHBfaWQiOjE0NTg5fQ%3D%3D%0A&amp;s=96b44f4548f55d146d41e473b1d06ce6" alt="ejemplo"/>
+        <div class="card-body project-tile">
+          <h5 class="project-tile">Proximamente<i class="ml-3 fas fa-times-circle"></i></h5><a class="disabled btn btn-outline-secondary btn-lg btn-block" href="#portafolio" target="_blank" id="profile-link">Proximamente</a>
+        </div>
+      </div>
+      <div class="card efecto my-3"><img class="card-img-top" src="https://images.unsplash.com/photo-1503007606601-a4ad8257a1ba?ixlib=rb-0.3.5&amp;q=85&amp;fm=jpg&amp;crop=entropy&amp;cs=srgb&amp;ixid=eyJhcHBfaWQiOjE0NTg5fQ%3D%3D%0A&amp;s=9ced72565a7923fc2c071a44fec15f27" alt="ejemplo"/>
+        <div class="card-body project-tile">
+          <h5 class="project-tile">Proximamente<i class="ml-3 fas fa-times-circle"></i></h5><a class="disabled btn btn-outline-secondary btn-lg btn-block" href="#portafolio" target="_blank" id="profile-link">Proximamente</a>
+        </div>
+      </div>
+      <div class="card efecto my-3"><img class="card-img-top" src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-0.3.5&amp;q=85&amp;fm=jpg&amp;crop=entropy&amp;cs=srgb&amp;s=5715d6f32fdd36241b817345dfb42d35" alt="ejemplo"/>
+        <div class="card-body project-tile">
+          <h5 class="project-tile">Proximamente<i class="ml-3 fas fa-times-circle"></i></h5><a class="disabled btn btn-outline-secondary btn-lg btn-block" href="#portafolio" target="_blank" id="profile-link">Proximamente</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="bg-light" id="sobreMi">
+  <div class="container py-5">
+    <h2 class="my-5 text-dark">Sobre Mi<i class="fa fa-user ml-2"></i></h2>
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+      <li class="nav-item"><a class="nav-link active" id="quienSoy-tab" data-toggle="tab" href="#quienSoy" role="tab" aria-controls="quienSoy" aria-selected="true">Quien Soy</a>
+      </li>
+      <li class="nav-item"><a class="nav-link" id="misHabilidades-tab" data-toggle="tab" href="#misHabilidades" role="tab" aria-controls="misHabilidades" aria-selected="false">Mis Habilidades</a>
+      </li>
+      <li class="nav-item"><a class="nav-link" id="misAficiones-tab" data-toggle="tab" href="#misAficiones" role="tab" aria-controls="misAficiones" aria-selected="false">Mis Aficiones</a>
+      </li>
+    </ul>
+    <div class="tab-content" id="mytabContent">
+      <div class="tab-pane fade show active" id="quienSoy" role="tabpanel" arialabelledby="quienSoy-tab">
+        <div class="row justify-content-center mt-5">
+          <div class="col-md-10 col-sm-12">
+            <div class="media p-3 border rounded" id="githubCard"><img class="align-self-center mr-3 rounded-circle" id="avatar" width="200px" height="200px"/>
+              <div class="media-body">
+                <h3 class="mt-0"><strong class="name"></strong></h3>
+                <p class="lead" id="bio"></p>
+                <div class="row" id="githubInfo">
+                  <div class="col-md-4 text-center">
+                    <p class="mb-0 text-muted" id="follower_number"></p>
+                    <p>Followers</p>
+                  </div>
+                  <div class="col-md-4 text-center">
+                    <p class="mb-0 text-muted" id="following_number"></p>
+                    <p>Followings</p>
+                  </div>
+                  <div class="col-md-4 text-center">
+                    <p class="mb-0 text-muted" id="repos"></p>
+                    <p>Repos</p>
+                  </div>
+                  <div class="col-md-4 text-center">
+                    <p class="mb-0 text-muted" id="location"></p>
+                    <p>Ubicacion</p>
+                  </div>
+                  <div class="col-md-4 text-center">
+                    <p class="mb-0 text-muted" id="business"></p>
+                    <p>Empresa</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-6 text-center mt-2"><a class="text-muted" href="https://www.canva.com/design/DAF1-L9dhx0/y_l-XmlIksaUTo6iHBp69Q/view?utm_content=DAF1-L9dhx0&utm_campaign=designshare&utm_medium=link&utm_source=editor#1" target="_blank">
+                      <button class="btn btn-outline-secondary" type="button"><i class="fa fa-download" aria-hidden="true"></i>Ver o descargar CV</button></a></div>
+                  <div class="col-md-6 text-center mt-2"><a class="text-muted" id="git_link" target="_blank">
+                      <button class="btn btn-outline-secondary"><i class="fab fa-github" aria-hidden="true"></i>Github</button></a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="misHabilidades" role="tabpanel" arialabelledby="misHabilidades-tab">
+        <div class="row justify-content-center mt-5">
+          <div class="col-md-12">
+            <div class="row">
+              <div class="col-md-6">
+                <p class="mb-0">HTML &amp; CSS</p>
+                <div class="progress mb-3">
+                  <div class="progress-bar progress-bar-striped bg-secondary" role="progressbar" style="width:80%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <p class="mb-0">Bootstrap, Angular Material, Materializecss ...</p>
+                <div class="progress mb-3">
+                  <div class="progress-bar progress-bar-striped bg-secondary" role="progressbar" style="width:70%" aria-valuenow="75%" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <p class="mb-0">Javascript</p>
+                <div class="progress mb-3">
+                  <div class="progress-bar progress-bar-striped bg-secondary" role="progressbar" style="width:100%" aria-valuenow="50%" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <p class="mb-0">node js</p>
+                <div class="progress mb-3">
+                  <div class="progress-bar progress-bar-striped bg-secondary" role="progressbar" style="width:75%" aria-valuenow="50%" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <p class="mb-0">Data base</p>
+                <div class="progress mb-3">
+                  <div class="progress-bar progress-bar-striped bg-secondary" role="progressbar" style="width:75%" aria-valuenow="50%" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <p class="mb-0">C/C++</p>
+                <div class="progress mb-3">
+                  <div class="progress-bar progress-bar-striped bg-secondary" role="progressbar" style="width:50%" aria-valuenow="50%" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <p class="mb-0">PHP</p>
+                <div class="progress mb-3">
+                  <div class="progress-bar progress-bar-striped bg-secondary" role="progressbar" style="width:80%" aria-valuenow="75%" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <p class="mb-0">Angular</p>
+                <div class="progress mb-3">
+                  <div class="progress-bar progress-bar-striped bg-secondary" role="progressbar" style="width:75%" aria-valuenow="65%" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <p class="mb-0">Typescript</p>
+                <div class="progress mb-3">
+                  <div class="progress-bar progress-bar-striped bg-secondary" role="progressbar" style="width:85%" aria-valuenow="50%" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <p class="mb-0">Express.js</p>
+                <div class="progress mb-3">
+                  <div class="progress-bar progress-bar-striped bg-secondary" role="progressbar" style="width:60%" aria-valuenow="50%" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <p class="mb-0">Jquery</p>
+                <div class="progress mb-3">
+                  <div class="progress-bar progress-bar-striped bg-secondary" role="progressbar" style="width:90%" aria-valuenow="50%" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <p class="mb-0">Web Scraping</p>
+                <div class="progress mb-3">
+                  <div class="progress-bar progress-bar-striped bg-secondary" role="progressbar" style="width:100%" aria-valuenow="50%" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="misAficiones" role="tabpanel" arialabelledby="misAficiones-tab">
+        <div class="row justify-content-center mt-5">
+          <div class="col-md-10 col-sm-12 row">
+            <div class="col-md-4 col-sm-5 text-center"><i class="fas fa-basketball-ball display-2 my-3"></i></div>
+            <div class="col-md-4 col-sm-5 text-center"><i class="fas fa-laptop display-2 my-3"></i></div>
+            <div class="col-md-4 col-sm-5 text-center"><i class="fas fa-camera-retro display-2 my-3"></i></div>
+            <div class="col-md-4 col-sm-5 text-center"><i class="fab fa-readme display-2 my-3"></i></div>
+            <div class="col-md-4 col-sm-5 text-center"><i class="fas fa-music display-2 my-3"></i></div>
+            <div class="col-md-4 col-sm-5 text-center"><i class="fas fa-plane display-2 my-3"></i></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="contacto"> 
+  <div class="container py-5">
+    <h2 class="my-5 text-dark">Contacto<i class="fa fa-envelope ml-2"></i></h2>
+    <h3 class="text-center text-dark">Por que no dices hola!</h3>
+    <p class="text-center text-secondary">¿Listo para estar en contacto conmigo y crear cosas increibles?</p>
+    <div class="row mt-5">
+      <div class="col-md-4 mt-3">
+        <p class="text-muted">Tambien Puedes contactarme o ver que estoy haciendo como desarrollador</p>
+        <ul class="list-group">
+          <li class="list-group-item list-group-item-action"><a class="list-group-item-action lead" href="https://www.linkedin.com/in/relly-garcia-0a7aaa1a9/" target="_blank">Linkedin<i class="ml-2 fab fa-linkedin-in" social="social"></i></a></li>
+          <!-- <li class="list-group-item list-group-item-action"><a class="list-group-item-action lead" href="" target="_blank">Codepen<i class="ml-2 fab fa-codepen" social="social"></i></a></li> -->
+          <li class="list-group-item list-group-item-action"><a class="list-group-item-action lead" href="https://github.com/relly27" target="_blank">Github<i class="ml-2 fab fa-github" social="social"></i></a></li>
+        </ul>
+      </div>
+      <div class="col-md-8">
+        <form class="container" id="contact-form">
+          <div class="form-row">
+            <div class="col-md-6 mt-3">
+              <input class="form-control" type="text" placeholder="Tu Nombre" name="user_name"/>
+            </div>
+            <div class="col-md-6 mt-3">
+              <input class="form-control" type="email" placeholder="Tu Correo" name="user_email"/>
+            </div>
+            <div class="col-md-12 mt-3">
+              <input class="form-control" type="text" placeholder="Asunto" name="user_subject"/>
+            </div>
+            <div class="col-md-12 mt-3">
+              <textarea class="form-control" placeholder="Puedes preguntar y contarme tus ideas" rows="8" name="message"></textarea>
+            </div>
+            <div class="col-md-12 text-center">
+              <input class="btn btn-outline-secondary my-3" type="submit" value="Enviar"/>
+            </div>
+          </div>
+        </form>
+
+        
+        <div id="alert-success" class="alert alert-success alert-dismissible fade show" role="alert" style="display: none;">
+          <strong>Mensaje enviado correctamente!</strong> Tu mensaje se ha enviado con éxito.
+          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+        
+        <div id="alert-error" class="alert alert-danger alert-dismissible fade show" role="alert" style="display: none;">
+          <strong>Error al enviar el mensaje.</strong> Ha ocurrido un error al enviar tu mensaje.
+          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+        
+        
+
+      </div>
+    </div>
+    <p class="text-center lead py-5">"Un código limpio y bien estructurado facilita el desarrollo"</p>
+  </div>
+</section>
+<footer class="bg-dark py-4" id="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 d-flex align-items-center justify-content-center">
+        <div class="nav-link text-muted"><strong><em>Relly Alberto Garcia</em></strong></div>
+      </div>
+      <div class="col-md-4">
+        <ul class="nav justify-content-center navbar-dark">
+          <li class="nav-item"><a class="nav-link" href="https://github.com/relly27" target="_blank"><i class="text-white fab fa-github"> </i></a></li>
+          <li class="nav-item"><a class="nav-link" href="https://www.linkedin.com/in/relly-garcia-0a7aaa1a9/" target="_blank"><i class="text-white fab fa-linkedin-in"> </i></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- partial -->
+  <script src='https://code.jquery.com/jquery-3.2.1.slim.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js'></script>
+<script src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js'></script>
+<!-- <script src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'></script> -->
+<script  src="./script.js"></script>
+<script src="./repos.js"></script>
+
+</body>
+</html>
