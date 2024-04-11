@@ -110,7 +110,7 @@ function cargarDatos() {
     .then(data => {
       jobs = data.map(item => {
         return {
-          nombre: item.name,
+          nombre: item.name.replace(/-/g, ' ').replace(/_/g, ' ').replace(/a os/g, 'años'),
           api_repo: item.contents_url.replace(/{\+path}/g, ''),
           html_url: item.html_url,
           cover: ""
