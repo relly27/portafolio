@@ -58,14 +58,14 @@ const updateUI = (data) => {
   };
 
   iterar(nombre, data.name);
-  bio.textContent = data.bio;
-  imagen.src = data.avatar_url;
-  location.textContent = data.location;
-  followers.textContent = data.followers;
-  following.textContent = data.following;
-  repos.textContent = data.public_repos;
-  git_url.href = data.html_url;
-  business.textContent = data.company || "No especificado";
+  if (bio) bio.textContent = data.bio;
+  if (imagen) imagen.src = data.avatar_url;
+  if (location) location.textContent = data.location;
+  if (followers) followers.textContent = data.followers;
+  if (following) following.textContent = data.following;
+  if (repos) repos.textContent = data.public_repos;
+  if (git_url) git_url.href = data.html_url;
+  if (business) business.textContent = data.company || "No especificado";
 };
 
 // Función para cargar los datos del usuario
