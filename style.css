@@ -1,29 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  color: #333;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
 .navbar-brand {
-  font-weight: 600;
-  font-style: italic;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: 1px;
 }
 
 header.hero-image {
-  background-image: url(https://images.unsplash.com/photo-1508830524289-0adcbe822b40?auto=format&fit=crop&w=1311&q=80);
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(https://images.unsplash.com/photo-1508830524289-0adcbe822b40?auto=format&fit=crop&w=1311&q=80);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: centern bottom;
+  background-position: center;
   background-attachment: fixed;
   height: 100vh;
+  display: flex;
+  align-items: center;
 }
+
+.hero-text-animate {
+  animation: fadeInDown 1s ease-out;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+header.hero-image h1 {
+  font-weight: 800;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+  letter-spacing: -1px;
+}
+
 header.hero-image p {
-  text-shadow: 0 0 4px #212121;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  max-width: 800px;
+  margin: 0 auto 2rem;
+}
+
+.btn-hero {
+  padding: 12px 30px;
+  border-radius: 50px;
+  font-weight: 600;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.9rem;
+}
+
+.btn-hero:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+#personalInfo i {
+  color: #6c757d;
+  width: 20px;
+}
+
+.card {
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.1);
+}
+
+.card-body {
+  padding: 1.5rem;
+}
+
+.progress {
+  height: 12px;
+  border-radius: 6px;
+  background-color: #e9ecef;
+  margin-bottom: 1.5rem !important;
+}
+
+.progress-bar {
+  background: linear-gradient(90deg, #6c757d, #343a40);
+  border-radius: 6px;
+}
+
+.nav-tabs {
+  border-bottom: none;
+  gap: 10px;
+}
+
+.nav-tabs .nav-link {
+  color: #6c757d;
+  font-weight: 600;
+  border: none;
+  border-radius: 30px;
+  padding: 10px 20px;
+  transition: all 0.3s ease;
+  font-size: 0.9rem;
+}
+
+.nav-tabs .nav-link:hover {
+  background-color: #f8f9fa;
+  border: none;
+}
+
+.nav-tabs .nav-link.active {
+  color: #fff;
+  background-color: #343a40;
+  border: none;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+#githubCard {
+  border: none;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+  background: #fff;
+  transition: transform 0.3s ease;
+}
+
+#avatar {
+  border: 4px solid #f8f9fa;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 2rem 0;
 }
 
 .efecto:hover {
-  transform: scale(1.01, 1.01);
-  box-shadow: 0 0 15px 0 #9E9E9E;
-  transition: all 0.4 ease;
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-@media only screen and (max-width: 575.98px) {
-  #mytabContent #githubCard {
-    display: flex;
+@media (max-width: 768px) {
+  #githubCard {
     flex-direction: column;
+    text-align: center;
+  }
+
+  #githubCard .media-body {
+    margin-top: 1.5rem;
+  }
+
+  .nav-tabs {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding-bottom: 10px;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .nav-tabs .nav-item {
+    white-space: nowrap;
+  }
+
+  #avatar {
+    margin-right: 0 !important;
   }
 }

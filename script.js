@@ -58,14 +58,14 @@ const updateUI = (data) => {
   };
 
   iterar(nombre, data.name);
-  bio.textContent = data.bio;
-  imagen.src = data.avatar_url;
-  location.textContent = data.location;
-  followers.textContent = data.followers;
-  following.textContent = data.following;
-  repos.textContent = data.public_repos;
-  git_url.href = data.html_url;
-  business.textContent = data.company || "No especificado";
+  if (bio) bio.textContent = data.bio;
+  if (imagen) imagen.src = data.avatar_url;
+  if (location) location.textContent = data.location;
+  if (followers) followers.textContent = data.followers;
+  if (following) following.textContent = data.following;
+  if (repos) repos.textContent = data.public_repos;
+  if (git_url) git_url.href = data.html_url;
+  if (business) business.textContent = data.company || "No especificado";
 };
 
 // Función para cargar los datos del usuario
@@ -104,42 +104,46 @@ const loadRepos = async () => {
 
     await Promise.all(promises);
 
-    const container = document.querySelector('.card-columns');
-    container.innerHTML = '';
+    const container = document.getElementById('projects-container') || document.querySelector('.card-columns');
+    if (container) {
+      container.innerHTML = '';
 
-    jobs.forEach(project => {
-      const newDiv = document.createElement('div');
-      newDiv.classList.add('card', 'efecto', 'my-3');
+      jobs.forEach(project => {
+        const newDiv = document.createElement('div');
+        newDiv.classList.add('card', 'efecto');
 
-      const img = document.createElement('img');
-      img.classList.add('card-img-top');
-      img.src = project.cover;
-      img.alt = project.nombre;
+        const img = document.createElement('img');
+        img.classList.add('card-img-top');
+        img.src = project.cover;
+        img.alt = project.nombre;
+        img.style.height = "200px";
+        img.style.objectFit = "cover";
 
-      const cardBody = document.createElement('div');
-      cardBody.classList.add('card-body', 'project-tile');
+        const cardBody = document.createElement('div');
+        cardBody.classList.add('card-body', 'project-tile', 'd-flex', 'flex-column');
 
-      const title = document.createElement('h5');
-      title.classList.add('project-tile');
-      title.textContent = project.nombre;
+        const title = document.createElement('h5');
+        title.classList.add('project-tile', 'mb-3', 'font-weight-bold');
+        title.textContent = project.nombre;
 
-      const link = document.createElement('a');
-      link.classList.add('btn', 'btn-outline-secondary', 'btn-lg', 'btn-block');
-      link.href = project.html_url;
-      link.target = "_blank";
-      link.textContent = "Vamos";
+        const link = document.createElement('a');
+        link.classList.add('btn', 'btn-outline-dark', 'btn-block', 'mt-auto');
+        link.href = project.html_url;
+        link.target = "_blank";
+        link.textContent = "Ver Proyecto";
 
-      const icon = document.createElement('i');
-      icon.classList.add('ml-3', 'fab', 'fa-free-code-camp');
+        const icon = document.createElement('i');
+        icon.classList.add('ml-2', 'fab', 'fa-github');
 
-      title.appendChild(icon);
-      cardBody.appendChild(title);
-      cardBody.appendChild(link);
-      newDiv.appendChild(img);
-      newDiv.appendChild(cardBody);
+        link.appendChild(icon);
+        cardBody.appendChild(title);
+        cardBody.appendChild(link);
+        newDiv.appendChild(img);
+        newDiv.appendChild(cardBody);
 
-      container.appendChild(newDiv);
-    });
+        container.appendChild(newDiv);
+      });
+    }
   }
 };
 
